@@ -22,39 +22,78 @@ body {
 
 main {
   background-color: white;
-  width: 335px;
-  margin: 20px auto;
+  width: 325px;
+  height: 570px;
+  margin: 25px auto 100px;
   overflow: hidden;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.order {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   justify-content: space-between;
+  height: 410px;
+  padding: 25px;
 }
 
 main > img {
   width: 100%;
 }
 
+h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--theme-darkblue);
+}
+
+h2 {
+  font-size: 16px;
+  color: var(--theme-darkblue);
+}
+
 p {
   font-size: 16px;
   color: var(--theme-desaturatedblue);
+  line-height: 1.75rem;
+}
+
+a {
+  font-size: 14px;
+  text-decoration: underline;
 }
 
 .plan {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: var(--theme-verypaleblue);
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .desc {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 #button-pay {
   background-color: var(--theme-brightblue);
   color: white;
+  box-shadow:0 10px 20px hsla(245, 75%, 52%, 0.281)
 }
 
 #button-cancel {
